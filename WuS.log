@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.26)  26 JUL 2024 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.26)  26 JUL 2024 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1009,42 +1009,41 @@ Overfull \hbox (4.70479pt too wide) in paragraph at lines 35--36
 [9
 
 ]
-Underfull \hbox (badness 2922) in paragraph at lines 181--181
+Underfull \hbox (badness 2922) in paragraph at lines 183--183
 []|$\OML/cmm/m/it/8 N$\OT1/cmr/m/n/8 : An-zahl aller El-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 \OML/cmm/m/it/8 M \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 N$\OT1/cmr/m/n/8 : An-zahl
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 225--225
+Underfull \hbox (badness 2799) in paragraph at lines 229--229
 []|$\OML/cmm/m/it/8 m$\OT1/cmr/m/n/8 : Frei-heits-
  []
 
 
-Underfull \hbox (badness 5787) in paragraph at lines 225--225
+Underfull \hbox (badness 5787) in paragraph at lines 229--229
 []|$\OML/cmm/m/it/8 n$\OT1/cmr/m/n/8 : Frei-heits-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []|$\OML/cmm/m/it/8 x[]$\OT1/cmr/m/n/8 : Lagepa-
  []
 
 
-Underfull \hbox (badness 4739) in paragraph at lines 225--225
+Underfull \hbox (badness 4739) in paragraph at lines 229--229
 \OML/cmm/m/it/8 ^^M$\OT1/cmr/m/n/8 : Skalen-pa-
  []
 
 <degrees_circle.pdf, id=332, 399.16716pt x 395.28479pt>
 File: degrees_circle.pdf Graphic file (type pdf)
 <use degrees_circle.pdf>
-Package pdftex.def Info: degrees_circle.pdf  used on input line 244.
+Package pdftex.def Info: degrees_circle.pdf  used on input line 248.
 (pdftex.def)             Requested size: 248.48741pt x 246.07527pt.
 ) [10
-
 
  <./degrees_circle.pdf>] (./WuS.aux)
 Package rerunfilecheck Info: File `WuS.out' has not changed.
@@ -1059,7 +1058,7 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  101i,19n,108p,483b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on WuS.pdf (10 pages, 477172 bytes).
+Output written on WuS.pdf (10 pages, 477098 bytes).
 PDF statistics:
  487 PDF objects out of 1000 (max. 8388607)
  413 compressed objects within 5 object streams

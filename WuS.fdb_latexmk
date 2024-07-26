@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1722003558 "/home/byte/semester4/wus/ETH-WuS-CheatSheet/WuS.tex" "WuS.pdf" "WuS" 1722003559
+["pdflatex"] 1722005203 "/home/byte/semester4/wus/ETH-WuS-CheatSheet/WuS.tex" "WuS.pdf" "WuS" 1722005208
   "/etc/texmf/web2c/texmf.cnf" 1721996874 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/byte/semester4/wus/ETH-WuS-CheatSheet/WuS.tex" 1722000911 669 5e7a687446569ce8e8704008c7bea12d ""
+  "/home/byte/semester4/wus/ETH-WuS-CheatSheet/WuS.tex" 1722005203 669 07d7c1fc79f9d922e5fbe97dfc4bb106 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -236,9 +236,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1721998832 4274508 18983a2702c78941afe08a34cba96fe0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1721998849 1503675 9a6e2fcbdf3769bcc9eb321ac1af9c1a ""
-  "WuS.aux" 1722003559 6391 346cba82c13ccd2df6eb063d3c066be1 "pdflatex"
-  "WuS.out" 1722003559 7334 506a53926beb7ef1d3c59312d318855b "pdflatex"
-  "WuS.tex" 1722000911 669 5e7a687446569ce8e8704008c7bea12d ""
+  "WuS.aux" 1722005207 6391 346cba82c13ccd2df6eb063d3c066be1 "pdflatex"
+  "WuS.out" 1722005207 7334 506a53926beb7ef1d3c59312d318855b "pdflatex"
+  "WuS.tex" 1722005203 669 07d7c1fc79f9d922e5fbe97dfc4bb106 ""
   "defaultcheatsheetstyle.sty" 1722000832 2512 a8c1fa606dadfb3f0406e11aae6a2e6f ""
   "degrees_circle.pdf" 1722002874 47446 100a4b40880d1dd58f18567af9bf4db6 ""
   "sections/Aufgaben.tex" 1721996898 4863 f7a00ac93648332a5085af71575157af ""
@@ -248,7 +248,7 @@
   "sections/Konfidenzintervalle.tex" 1721996645 1279 768dae873ea4c9d7d86bd7161776c766 ""
   "sections/Mehrere Zufallsvariablen.tex" 1721996645 11742 20cf0d7d3388d95793afe25a7d5ab215 ""
   "sections/Schätzer.tex" 1721996645 5564 9e74338be5d64afab0e9df0b12ce5958 ""
-  "sections/Tabellen.tex" 1722003558 20478 65c5c3155c4bbb074a15267c613931b0 ""
+  "sections/Tabellen.tex" 1722004925 20558 88d286aae79d969e6eaca479636622e2 ""
   "sections/Tests.tex" 1721996645 9104 8b95ada054d5f53ed704611ea8c60bcd ""
   "sections/Zufallsvariablen.tex" 1721996645 7073 a052890e47bcced2e69bd5f29ebf4ced ""
   (generated)
