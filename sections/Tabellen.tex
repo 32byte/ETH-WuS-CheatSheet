@@ -19,7 +19,7 @@
 \end{center}
 
 \begin{mainbox}{Partielle Integration}
-	
+
 	$$\int f'(x) g(x) \mathop{dx} = f(x)g(x) - \int f(x) g'(x) \mathop{dx}$$
 \end{mainbox}
 \begin{itemize}
@@ -34,12 +34,12 @@
 	\item Grenzen substituieren nicht vergessen.
 	\item Alternativ: unbestimmtes Integral berechnet werden und dann $u$ wieder durch $x$ substituieren.
 	\item Man kann auch das Theorem in die andere Richtung anwenden: \[\int_a^b f(u) \mathop{du} = \int_{g^{-1}(a)}^{g^{-1}(b)}f(g(x))g'(x) \dx\]
-	\item Sei $\X, Y$ kompakt, $f: Y \subset \R^n \to \R$ stetig. 
-	
-	Sei $\gamma: \X \to Y$ mit $\X = \X_0 \cup B, Y = Y_0 \cup C$ ($B, C$ Rand von $\X, Y$). 
-	
-	Wenn $\gamma: \X_0 \to Y_0$ bijektiv und $C^1$ mit det$(J_\gamma(x)) \neq 0, \forall x \in \X_0$, dann gilt 
-	\[\int_Y f(y)\mathop{dy} = \int_{\X} f(\gamma(x))|\text{det}(J_\gamma(x))|\dx\]
+	\item Sei $\X, Y$ kompakt, $f: Y \subset \R^n \to \R$ stetig.
+
+	      Sei $\gamma: \X \to Y$ mit $\X = \X_0 \cup B, Y = Y_0 \cup C$ ($B, C$ Rand von $\X, Y$).
+
+	      Wenn $\gamma: \X_0 \to Y_0$ bijektiv und $C^1$ mit det$(J_\gamma(x)) \neq 0, \forall x \in \X_0$, dann gilt
+	      \[\int_Y f(y)\mathop{dy} = \int_{\X} f(\gamma(x))|\text{det}(J_\gamma(x))|\dx\]
 \end{itemize}
 
 \subsection{Ableitungen}
@@ -109,15 +109,15 @@
 	\begin{enumerate}
 		\item Wir schreiben $Z \sim Ga(\alpha, \lambda)$ für eine gamma-verteilte Zufallsvariable $Z$ mit Parametern $\alpha$ und $\lambda$.
 		\item Die Summe von $n \in \N$ unabhängigen $Exp(\lambda)$-verteilten Zufallsvariablen ist $Ga(n, \lambda)$-verteilt.
-		\item Die $\chi^2$-Verteilung mit $k$ Freiheitsgraden ist $Ga\left(\frac{k}{2}, \frac{1}{2}\right)$-verteilt. 
+		\item Die $\chi^2$-Verteilung mit $k$ Freiheitsgraden ist $Ga\left(\frac{k}{2}, \frac{1}{2}\right)$-verteilt.
 	\end{enumerate}
 \end{subbox}
-Sei $(X_i)_{i \geq 1} \sim \mathcal{N}(0,1)$ iid. eine Folge von Zufallsvariablen. 
+Sei $(X_i)_{i \geq 1} \sim \mathcal{N}(0,1)$ iid. eine Folge von Zufallsvariablen.
 \begin{enumerate}
 	\item $\sum_{i = 1}^{n} X_i^2 \sim \chi^2_n$
 	\item $\frac{1}{n}(\sum_{i = 1}^n X_i)^2 \sim \chi_1^2$
 	\item $X_1^2 + X_2^2 \sim Exp\left(\frac{1}{2}\right)$
-	\item Sei $Y \sim \chi_m^2$ unabhängig von $X \sim \mathcal{N}(0,1)$. Dann gilt \[\frac{X}{\sqrt{\frac{1}{m}Y}} \sim t_m\] 
+	\item Sei $Y \sim \chi_m^2$ unabhängig von $X \sim \mathcal{N}(0,1)$. Dann gilt \[\frac{X}{\sqrt{\frac{1}{m}Y}} \sim t_m\]
 	\item Es gilt $\lim_{m\to\infty} t_m \sim \mathcal{N}(0,1)$ verteilt, für endliche $m$ is $t_m$ langschwänziger als $\mathcal{N}(0,1).$
 \end{enumerate}
 Seien $X_1, \ldots, X_n$ iid. $\sim \mathcal{N}(\mu, \sigma^2)$.
@@ -139,45 +139,94 @@ Wir erinneren uns an die Notationen für Stichprobenmittel $\overline{X}_n$ und 
 \end{itemize}
 
 \clearpage
+\section{Diskrete Verteilungen}
 
-\renewcommand*{\arraystretch}{2}
-\begin{center}
-\begin{table*}
-	\subsection{Verteilungen}
-	
-		\begin{tabularx}{\textwidth}{llXXXX}
-			\toprule
-			Verteilung       & Parameter                                   & \( \E[X] \) & \( \Var(X) \)       & \( p_X(t)/f_X(t) \)         & \( F_X(t) \)                     \\
-			\midrule
-			Gleichverteilung & \makecell[l]{\( n \): Anzahl Ereignisse                                                                                                   \\ \( x_i \): Ereignisse} & \( \frac{1}{n} \sum_{i=1}^{n} x_i \) & \( \frac{1}{n} \sum_{i=1}^{n} x_i^2 - \frac{1}{n^2} \left(\sum_{i=1}^{n} x_i \right)^2 \) & \( \frac{1}{n} \) & \( \frac{|\{k:x_k \leq t\}|}{n} \) \\
-	
-			Bernoulli        & \( p: \) ErfolgsWK                          & \( p \)     & \( p \cdot (1-p) \) & \( p^t(1-p)^{1-t} \) & \( 1-p \) für \( 0 \leq t < 1 \) \\
-	
-			Binomial         & \makecell[l] {\( n \): Anzahl Versuche                                                                                                    \\ \( p: \) ErfolgsWK } & \( np \) & \( np(1-p) \) & \( \binom{n}{t}p^t(1-p)^{n-t} \) & \( \sum_{k=0}^{t} \binom{n}{k} p^k(1-p)^{n-k} \)  \\
-	
-			Geometrisch      & \makecell[l] { \( p \): ErfolgsWK                                                                                                         \\ \( t: \) Anzahl Versuche} & \( \frac{1}{p} \) & \( \frac{1-p}{p^2} \) & \( p(1-p)^{t-1} \) & \( 1-(1-p)^t\) \\
-	
-			Poisson          & \makecell[l]{ \( \lambda \): Erwartungswert                                                                                               \\ und Varianz} & \( \lambda \) & \( \lambda \) & \( \frac{\lambda^t}{t!}e^{-\lambda} \) & \( e^{-\lambda} \sum_{k=0}^{t} \frac{\lambda^{k}}{k!} \) \\
-			
-			Gleichverteilung         & \( [a,b] \): Intervall               & \( \frac{a+b}{2} \)              & \( \frac{1}{12}(b-a)^2 \)        & \(\begin{cases} \frac{1}{b-a} &a \le x \le b \\ 0 & \text{sonst}\end{cases}\)                                                                                                                & \(\begin{cases} 0 & x\le a \\ \frac{t-a}{b-a} & a < x < b \\ 1 & x \ge b \end{cases}\)                \\
-		
-				Exponentialverteilung    & \( \lambda: \frac{1}{\E[X]} \)       & \( \frac{1}{\lambda} \)          & \( \frac{1}{\lambda^2} \)        & \( \begin{cases} \lambda e^{-\lambda t} & t \geq 0 \\ 0 & t < 0 \end{cases} \)                                                                                                              & \( \begin{cases} 1-e^{-\lambda t} & t>0 \\ 0 & t \leq 0\end{cases}\)               \\
-		
-				Normalverteilung         & \makecell[l]{\( \sigma^2 \): Varianz                                                                                                                                                                                                                                                                       \\ \( \mu: \E[X] \)} & \( \mu \) & \( \sigma ^2 \) & \( \frac{1}{\sqrt{2\pi \sigma^2} }e^{-{\frac{(t-\mu)^2}{2\sigma^2} }} \) & \( \frac{1}{\sigma {\sqrt{2\pi}}} \int_{-\infty}^t e^{-\frac{1}{2}\left( \frac{y-\mu}{\sigma} \right) ^2} \mathrm{d} y \) \\
-		
-				\( \chi ^2 \)-Verteilung & \( n \): Freiheitsgrad               & \( n \)                          & \( 2n \)                         & \( \frac{1}{2^{\frac{n}{2}}\Gamma (\frac{n}{2})} t^{\frac{n}{2}-1} e^{-\frac{t}{2}} \text{ für } t>0\)                                        & \(P\left( \frac{n}{2}, \frac{t}{2}\right) \) \\
-		
-				t-Verteilung             & \( n \): Freiheitsgrad               & \( \begin{cases} 0 & n>1 \\ \text{undef.} & \text{sonst} \end{cases} \) & \( \begin{cases} \frac{n}{n-2} & n> 2 \\ \infty & 1<n \leq 2 \\ \text{undef.} & \text{sonst} \end{cases} \) & \( \frac{\Gamma \left( \frac{n+1}{2} \right) }{\sqrt{n\pi } \cdot \Gamma (\frac{n}{2})} \left( 1+ \frac{t^2}{n} \right) ^{- \frac{n+1}{2}} \) & I'd rather not                                \\
-		
-		
-	
-			\bottomrule
-		\end{tabularx}
+\renewcommand{\arraystretch}{1.8}
+\resizebox{.99\linewidth}{!}{
+	\begin{tabular}{||c|p{3.3cm}|*{4}{c|}|}
+		\hline
+		Verteilung                                                   & Parameter                                                                & $\mathbb{E}[X]$                     & Var($X$)                          & $p_X(t)$                     & $F_X(t)$                 \\
+		\hline
+		Gleichverteilung                                             & $n$: Anzahl Ereignisse \newline $x_i$: Ereignisse                        & $\frac{1}{n}\sum_{i=1}^{n}x_i$      & $\frac{1}{n}\sum_{i=1}^{n}x_i^2 -
+		\frac{1}{n^2}\left(\sum_{i=1}^n x_i \right)^2$               & $\frac{1}{n}$                                                            & $\frac{|\{k:x_k \leq
+		t\}|}{n}$                                                                                                                                                                                                                                                                   \\
+		\hline
 
-    \end{table*}
-\end{center}
+		Bernoulli                                                    & $p$: ErfolgsWK                                                           & $p$                                 & $p \cdot (1-p) $                  & $p^t(1-p)^{1-t}$             & $1-p$ für $0 \leq t < 1$ \\
+		\hline
 
-\vspace*{-1.1cm}
+		Binomial                                                     & $p$: ErfolgsWK\newline$n$: Anzahl Versuche                               & $np$                                & $np(1-p)$                         & $\binom{n}{t}p^t(1-p)^{n-t}$ &
+		$\sum_{k=0}^t\binom{n}{k}p^k(1-p)^{n-k}$                                                                                                                                                                                                                                    \\
+		\hline
+
+		Geometrisch                                                  & $p$: ErfolgsWK\newline$t$: Anzahl Versuche                               & $\frac{1}{p}$                       & $\frac{1-p}{p^2}$                 &
+		$p(1-p)^{t-1}$                                               & $1-(1-p)^t$                                                                                                                                                                                                  \\
+		\hline
+
+		Negativ Binomial                                             & $r>0$: Erfolge bis Abbruch\newline$p$: ErfolgsWK\newline$t$: Misserfolge &
+		$\frac{pr}{1-p}$                                             & $\frac{pr}{(1-p)^2}$                                                     & $\binom{t+r-1}{k} \cdot (1-p)^rp^t$ &
+		$F_{\text{Binomial}}(t;n=t+r,p)$                                                                                                                                                                                                                                            \\
+		\hline
+
+		Hypergeometrisch                                             & $N$: Anzahl aller Elemente\newline$M \leq N$: Anzahl möglicher
+		Erfolge\newline$n \leq N$: Anzahl Elemente in der Stichprobe & $n\frac{M}{N}$                                                           &
+		$n\frac{M}{N}\left(1-\frac{M}{N}\right)\frac{N-m}{N-1}$
+		                                                             & \raisebox{-5pt}{$\frac{\binom{M}{t}\binom{N-M}{n-t}}{\binom{N}{n}}$}     &
+		\raisebox{-5pt}{$\sum_{k=0}^{t}\frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}$}                                                                                                                                                                                          \\
+		\hline
+
+		Poisson                                                      & $\lambda$: Erwartungswert und Varianz                                    & $\lambda$                           & $\lambda$                         &
+		$\frac{\lambda^k}{k!}e^{-\lambda}$                           & $p$                                                                                                                                                                                                          \\
+		\hline
+	\end{tabular}}
+\section{Stetige Verteilungen}
+
+\resizebox{.99\linewidth}{!}{
+	\begin{tabular}{||c|p{2cm}|*{4}{c|}|}
+		\hline
+		Verteilung                                                                                     & Parameter                                                                          & $\mathbb{E}[X]$            & Var($X$)                                                                             & $f_X(t)$ & $F_X(t)$ \\
+		\hline
+
+		Gleichverteilung                                                                               & $[a,b]$: Intervall                                                                 & $\frac{a+b}{2}$            & $\frac{1}{12}(b-a)^2$                                                                &
+		$\frac{1}{b-a}$                                                                                & $\frac{t-a}{b-a}$                                                                                                                                                                                                            \\
+		\hline
+
+		Exponentialverteilung                                                                          & $\lambda: \frac{1}{\mathbb{E}[X]}$                                                 & $\frac{1}{\lambda}$        &
+		$\frac{1}{\lambda^2}$                                                                          & $\begin{cases} \lambda e^{-\lambda t}&t\geq 0\\0&t<0\end{cases}$                   &
+		$\begin{cases}1-e^{-\lambda t}&t>0\\0&t\leq 0\end{cases}$                                                                                                                                                                                                                                                                     \\
+		\hline
+
+		Normalverteilung                                                                               & $\sigma^2$: Varianz \newline $\mu: \mathbb{E}[X]$                                  & $\mu$                      & $\sigma^2$                                                                           &
+		\raisebox{-5pt}{$\frac {1}{\sqrt {2\pi \sigma^{2}}}e^{-{\frac {(t-\mu )^{2}}{2\sigma ^{2}}}}
+		-\infty <t<\infty $}                                                                           & \raisebox{-5pt}{${\frac {1}{\sigma {\sqrt {2\pi }}}}\int _{-\infty }^{t}e^{-{\frac
+		{1}{2}}\left({\frac {y-\mu }{\sigma }}\right)^{2}}\mathrm {d} y$}                                                                                                                                                                                                                                                             \\
+		\hline
+
+		$\chi^2$-Verteilung                                                                            & $m$: Freiheitsgrad                                                                 & $m$                        & $2m$                                                                                 & $\frac
+			{1}{2^{\frac {m}{2}}\Gamma ({\tfrac {m}{2}})}t^{{\frac {m}{2}}-1}e^
+		{-{\frac {t}{2}}}\quad t>0$                                                                    & Gamma$(\frac{m}{2}, \frac{t}{2})$                                                                                                                                                                                            \\[8pt]
+		\hline
+
+		Gamma-Verteilung                                                                               & $\alpha,\lambda$                                                                   & $\frac{\alpha}{\lambda}$   & $\frac{\alpha}{\lambda^2}$                                                           &
+		\raisebox{-5pt}{${\begin{aligned}{\frac {\lambda ^{\alpha }t^{\alpha -1}e^{-\lambda t}}{\Gamma
+							                  (\alpha )}}\quad t>0\quad \alpha ,\lambda >0\end{aligned}}$} & ${\frac
+		{1}{\Gamma (\alpha )}}\gamma (\alpha ,\lambda t)$                                                                                                                                                                                                                                                                             \\[10pt]
+		\hline
+
+		t-Verteilung                                                                                   & $n$: Freiheitsgrad                                                                 & $0$ für $n>1$ sonst undef. & $\begin{cases} \frac{n}{n-2} &
+              n > 2           \\ \infty & 1 < n \leq 2 \\ \text{undef.} & \text{sonst}\end{cases}$ &
+		\raisebox{-2pt}{$\frac{\Gamma\left( \frac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma(\frac{n}{2})}
+		\left(1 + \frac{t^2}{n}\right)^{- \frac{n+1}{2}}$}                                             & oof                                                                                                                                                                                                                          \\[10pt]
+		\hline
+
+		Chauchy-Verteilung                                                                             & $x_0$: Lageparameter \newline $\gamma$: Skalenparameter                            & undef.                     & undef.                                                                               &
+		$\frac{1}{\pi\gamma\left[1+\left(\frac{t-x_0}{\gamma}\right)^2\right]}$                        & $\frac{1}{2} + \frac{1}{\pi} \arctan\left(\frac{t-x_0}{\gamma}\right)$                                                                                                                                                       \\
+		\hline
+	\end{tabular}}
+
+\renewcommand{\arraystretch}{1}
+
+\vspace*{0.2cm}
 \begin{subbox}{Gamma-Funktion}
 	\begin{align*}
 		\Gamma(v) := \int_0^\infty t^{v-1}e^{-t}\mathop{dt}, v \geq 0.
@@ -187,13 +236,31 @@ Wir erinneren uns an die Notationen für Stichprobenmittel $\overline{X}_n$ und 
 \begin{subbox}{Binomischer Lehrsatz}
 	\[(x + y)^n = \sum_{k = 0}^n  \binom{n}{k} x^{n-k}y^k\]
 \end{subbox}
-\break
-\vspace*{12.5cm}
 \begin{subbox}{Cauchy Produkt}
 	Falls $\sum_{n= 0}^\infty a_n$ und $\sum_{n = 0}^\infty b_n$ absolut konvergent, dann folgt
 	\[\sum_{n = 0}^\infty \sum_{k = 0}^n a_kb_{n-k} = \sum_{n = 0}^\infty \sum_{i+j = n} a_ib_j = \left(\sum_{n = 0}^\infty a_n\right) \cdot \left(\sum_{k = 0}^\infty b_k\right)\]
 \end{subbox}
-\section{Quellen}
-Dieses Cheatsheet wurde von vorherigen (Julian Steinmann, Danny Camenisch) inspiriert (vor allem Kapitel 6-10). Definitionen und Aufgaben stammen aus den Slides von Prof. Teichmann, dem Skript (M. Schweizer, 2021) und den Übungsserien vom Frühlingssemester 2023.
 
+\includegraphics[width=\linewidth]{degrees_circle.pdf}
 
+\begin{subbox}{$\chi^2$-Verteilung}
+	Sind die Zufallsvariablen $X_1, ..., X_n$ i.i.d. $\sim \mathcal{N}(0,1)$, dann ist
+	\[\sum_{i = 1}^n X_i^2 \sim \chi^2_m\]
+
+	\begin{itemize}
+		\item $\chi^2_m$ ist eine Gamma-Verteilung mit $\alpha = \frac{m}{2}$ und $\lambda = \frac{1}{2}$.
+		\item Falls $m = 2$, dann ist $\chi^2_2$ eine Exponentialverteilung mit $\lambda = \frac{1}{2}$.
+	\end{itemize}
+\end{subbox}
+
+\begin{subbox}{t-Verteilung}
+	Seien $X \sim \mathcal{N}(0,1)$ und $Y \sim \chi^2_m$ unabhängig. Dann ist
+	\[T = \frac{X}{\sqrt{\frac{Y}{m}}} \sim t_m\]
+
+	\begin{itemize}
+		\item $t_m$ ist symmetrisch um $0$.
+		\item Für $m = 1$ ist $t_1$ Cauchy-verteilt.
+		\item $t_n$ ist langschwänziger als $\mathcal{N}(0,1)$.
+		\item $\lim_{m\to\infty} t_m = \mathcal{N}(0,1)$.
+	\end{itemize}
+\end{subbox}

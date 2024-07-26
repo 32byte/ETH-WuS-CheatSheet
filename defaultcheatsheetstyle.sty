@@ -1,8 +1,5 @@
 \ProvidesPackage{defaultcheatsheetstyle}
 
-
-\usepackage[nswissgerman]{babel}
-
 % 3 column landscape layout with fewer margins
 \usepackage[landscape, left=0.75cm, top=1cm, right=0.75cm, bottom=1.5cm, footskip=5pt]{geometry}
 \usepackage{flowfram}
@@ -11,7 +8,7 @@
 \Ncolumn{3}
 
 %saving space around section headers and customising them
-\usepackage[compact]{titlesec}  
+\usepackage[compact]{titlesec}
 % \titlespacing{\section}{0pt}{2pt}{0pt}
 % \titlespacing{\subsection}{0pt}{2pt}{0pt}
 % \titlespacing{\subsubsection}{0pt}{2pt}{0pt}
@@ -26,23 +23,23 @@
 % a base set, that is then customised
 \tcbset {
   base/.style={
-    boxrule=0mm,
-    boxsep = 1mm,
-    leftrule=1mm,
-    left=0.8mm,
-    arc=2mm, 
-    fonttitle=\bfseries, 
-    colbacktitle=black!10!white, 
-    coltitle=black, 
-    toptitle=0.0mm, 
-    bottomtitle=0.0mm,
-    title={#1}
-  }
+      boxrule=0mm,
+      boxsep = 1mm,
+      leftrule=1mm,
+      left=0.8mm,
+      arc=2mm,
+      fonttitle=\bfseries,
+      colbacktitle=black!10!white,
+      coltitle=black,
+      toptitle=0.0mm,
+      bottomtitle=0.0mm,
+      title={#1}
+    }
 }
 
 \definecolor{nicegreen}{rgb}{0.004, 0.5, 0.35}
 \newtcolorbox{mainbox}[1]{
-  colframe=nicegreen, 
+  colframe=nicegreen,
   base={#1}
 }
 
@@ -52,7 +49,7 @@
 }
 
 % Mathematical typesetting & symbols
-\usepackage{amsthm, mathtools, amssymb} 
+\usepackage{amsthm, mathtools, amssymb}
 \usepackage{marvosym, wasysym, dsfont}
 \usepackage{derivative}
 %right formatting for not implies
